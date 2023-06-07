@@ -4,11 +4,11 @@ import LandingPage from './views-pages/landing/landing';
 import Home from './views-pages/home/home';
 import Form from './views-pages/create-form/create-form';
 import Detail from './views-pages/details/details';
-import Nav from './components/nav/Nav.jsx';
+import Nav from './components/nav/Nav';
 import { useLocation } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
-import {getAllDogs, getTemperaments} from '../../client/src/redux/actions'
+import {getAllDogs, getTemperaments} from '../src/redux/actions'
 
 
 function App() {

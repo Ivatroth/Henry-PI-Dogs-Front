@@ -1,6 +1,6 @@
 import { useEffect} from 'react';
 import './details.css';
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { getDogID, deleteDog } from '../../redux/actions';
 
