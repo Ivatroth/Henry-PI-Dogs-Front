@@ -1,5 +1,5 @@
 import React from "react";
-import paginado from "./paginado.css";
+import "./paginado.css";
 
 
 export const Paginado = ({allDogs, dogsXPage, paginado}) => {
