@@ -14,7 +14,7 @@ export const DELETE = 'DELETE'
 export const getAllDogs = () =>{
     return async function(dispach){
     try {
-            const response = await axios('http://localhost:3001/dogs');
+            const response = await axios('https://henry-pi-dogs-back-production.up.railway.app/dogs');
             return dispach({type: 'GET_DOGS', payload: response.data});
             
         } catch (error) {
@@ -27,7 +27,7 @@ export const getAllDogs = () =>{
 export const getNameDogs = (name) =>{
     return async function(dispach){
         try {
-            const response = await axios(`http://localhost:3001/dogs/name?name=${name}`);
+            const response = await axios(`https://henry-pi-dogs-back-production.up.railway.app/dogs/name?name=${name}`);
             return dispach({type: 'GET_DOGS', payload: response.data});         
         } catch (error) {
             window.alert("No existe raza de perros que coincida con lo buscado");
@@ -39,7 +39,7 @@ export const getNameDogs = (name) =>{
 export const getDogID = (id) => {
        return async function(dispach){
             try {
-                const response = await axios(`http://localhost:3001/dogs/${id}`);
+                const response = await axios(`https://henry-pi-dogs-back-production.up.railway.app/dogs/${id}`);
                 return dispach({type: 'GET_DOG_ID', payload: response.data});
             } catch (error) {
                 alert("Error: " + error.message)
@@ -50,7 +50,7 @@ export const getDogID = (id) => {
 export const getTemperaments = () => {
     return async function(dispach){
     try {
-        const response = await axios(`http://localhost:3001/temperaments`);
+        const response = await axios(`https://henry-pi-dogs-back-production.up.railway.app/temperaments`);
         return dispach({type: 'GET_TEMPERAMENTS', payload: response.data});
             
     } catch (error) {
@@ -62,7 +62,7 @@ export const getTemperaments = () => {
 export const postCreateDogs = (newDogs) =>{
     return async function(dispach){
     try {
-            const response = await axios.post('http://localhost:3001/dogs', newDogs)
+            const response = await axios.post('https://henry-pi-dogs-back-production.up.railway.app/dogs', newDogs)
             return dispach({type: 'CREATE_DOG', payload : response.data})
         } catch (error) {
             alert("Error: " + error.message)
@@ -74,7 +74,7 @@ export const filterCards = (filter) => {
     //*aca hago el filtrado
     return async function(dispach){
     try {
-            const response = (await axios('http://localhost:3001/dogs')).data;
+            const response = (await axios('https://henry-pi-dogs-back-production.up.railway.app/dogs')).data;
             let filtrado = []
             if( filter === 'Todos') filtrado = response;
             else if(filter === 'Api') filtrado = response.filter((dog)=> dog.created === false)
@@ -95,7 +95,7 @@ export const filterCards = (filter) => {
 
     return async function(dispach){
     try {
-            const response = (await axios('http://localhost:3001/dogs')).data;
+            const response = (await axios('https://henry-pi-dogs-back-production.up.railway.app/dogs')).data;
             let regExp = new RegExp(`${temp}`, 'g');
             const dogsXTemper = response.filter(dog => regExp.test(dog.temperament) === true );
             return dispach({type: 'GET_DOGS', payload: dogsXTemper})
