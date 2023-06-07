@@ -1,0 +1,80 @@
+.container{
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+.segucont{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    text-align: justify;
+    margin: 10px 50px 30px 180px;
+    padding: 25px;
+    width: 800px;
+    background-color: #b3abab;
+    box-shadow: 10px 10px 15px #999;
+    
+}
+
+label{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bolder;
+    font-size: large;
+    padding: 10px;
+
+}
+p{
+    font-size:x-large;
+    padding: 5px;
+    color: rgb(160, 16, 16);
+}
+
+span{
+    font-style: italic;
+    color: #762e15;
+    font-weight:bold;
+    padding: 10px;
+    font-size: large;
+}
+.entradas{
+    margin-top: 1em;
+}
+input,select,button{
+    font-size: larger;
+    height: 35px;
+}
+input{
+    border-radius: 5px;
+}
+#altura_min,#altura_max,#peso_min,#peso_max,#vida_min,#vida_max{
+    width: 60px;
+}
+
+button{
+    width: 150px;
+    border-radius: 5px;
+    color: #762e15;
+    font-weight:bold;
+    align-self: flex-end;
+}
+
+.newimage{
+    width: 500px;
+    height: 425px;
+    box-shadow: 10px 10px 15px #999;
+}
+
+img{
+    padding-top: 0px;
+    margin-top: 60px;
+    border-radius: 3px;
+    box-shadow: 10px 10px 15px #6f6e6e;
+}
+h1{
+    padding-top: 20px;
+}

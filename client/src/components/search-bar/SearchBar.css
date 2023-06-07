@@ -1,0 +1,22 @@
+.navbar{
+    padding-top: 5px;
+    padding-bottom: 20px;
+
+}
+
+.searchInput{
+    border: 1px;
+    border-radius: 5px 0px 0px 5px;
+    background-color: #fff;
+    height: 1.7em; 
+    width: 230px;
+
+}
+
+.searchButton{
+    border: 1px;
+    border-radius:0px 5px 5px 0px;
+    background-color: #dec5c5;
+    height: 1.7em;
+    width: 90px;
+}

@@ -1,0 +1,44 @@
+.card{
+    display: flex;
+    flex-direction:row;
+    background-color: #c0b5af;
+    border: 1px solid black;
+    border-style: double;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 20px;
+    width: 400;
+    height: 450px;
+    box-shadow: 10px 10px 15px #999;
+}
+.info{
+  padding-left: 20px;
+  text-align: center;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+
+img {
+    width: 280px;
+    height: 280px;
+  }
+
+h1{
+   align-items: center;
+   padding-left: 15px;
+   padding-bottom: 20px;
+   color: #a9785e;
+  }
+
+h4, h3{
+  text-align:left;
+  padding: 10px;
+}
+
+  .linck {
+    text-decoration: none;
+    color: rgb(31, 52, 52);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
