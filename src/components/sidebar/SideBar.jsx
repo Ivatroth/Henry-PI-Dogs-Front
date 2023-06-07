@@ -1,4 +1,4 @@
-import SearchBar from "../search-bar/SearchBar"
+import SearchBar from '../search-bar/SearchBar';
 import './SideBar.css'
 
 const SideBar = ({searchDogs, searchF, searchO, searchT, onSearch, handleChange, allTemperaments})=>{
